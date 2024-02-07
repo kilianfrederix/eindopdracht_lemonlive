@@ -1,0 +1,551 @@
+/* variabelen */
+:root {
+    --e-global-color-secondary: #5c5dbc;
+    --e-global-color-aa6f337: #8d24e5;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* background css */
+.background-gradient {
+    background-color: transparent;
+    background-image: linear-gradient(230deg, var(--e-global-color-secondary) 0%, var(--e-global-color-aa6f337) 61%);
+}
+
+.background-clr-white {
+    background-color: white;
+}
+
+.background-image {
+    background-color: #ffffff;
+    background-image: url(https://lemonlive.be/wp-content/uploads/2021/01/ll-winand-2560x1000-1.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-clr-blue {
+background-color: #5B5DF0;
+}
+
+/* flex css */
+.flex {
+    display: flex;
+}
+
+.justify-right {
+    justify-content: right;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* margin css */
+.margin-left-5px {
+    margin-left: 5px;
+}
+
+.margin-left-10px {
+    margin-left: 10px;
+}
+
+.margin-left-25px {
+    margin-left: 25px;
+}
+
+.margin-left-50px {
+    margin-left: 50px;
+}
+
+.margin-left-195px {
+    margin-left: 195px;
+}
+
+.margin-left-595px {
+    margin-left: 595px;
+}
+
+.margin-bottom-5px {
+    margin-bottom: 5px;
+}
+
+.margin-bottom-10px {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20px {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30px {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-40px {
+    margin-bottom: 40px;
+}
+
+.margin-bottom-50px {
+    margin-bottom: 50px;
+}
+
+.margin-bottom-100px {
+    margin-bottom: 100px;
+}
+
+.margin-right-10px {
+    margin-right: 10px;
+}
+
+.margin-right-50px {
+    margin-right: 50px;
+}
+
+.margin-right-120px {
+    margin-right: 120px;
+}
+
+.margin-top-100px {
+    margin-top: 100px;
+}
+
+.margin-top-50px {
+    margin-top: 50px;
+}
+
+.margin-top-40px {
+    margin-top: 40px;
+}
+
+.margin-top-20px {
+    margin-top: 20px;
+}
+
+.margin-top-15px {
+    margin-top: 15px;
+}
+
+.margin-top-10px {
+    margin-top: 10px;
+}
+
+.margin-top-5px {
+    margin-top: 5px;
+}
+
+.margin-top-0px {
+    margin-top: 0px;
+}
+
+.margin-bottom-150px {
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+
+.padding-top-bottom-25px {
+    padding: 25px 0;
+}
+
+.padding-bottom-40px {
+    padding-bottom: 40px;
+}
+
+.padding-top-20px {
+    padding-top: 20px;
+}
+
+/* logo css */
+.img-small {
+    display: block;
+    height: auto;
+    width: 100px
+}
+
+/* text css */
+.color-black {
+    color: black;
+    transition: 250ms;
+}
+
+.color-black:hover {
+    color: var(--e-global-color-secondary);
+    border-bottom: 2px solid var(--e-global-color-secondary);
+    background-color: white;
+}
+
+.color-black-dropdown {
+    color: black;
+    transition: 250ms;
+}
+
+.color-black-dropdown:hover {
+    color: var(--e-global-color-secondary);
+    background-color: white;
+}
+
+.yellow-title {
+    color: #FEC107;
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.white-title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.white-title-form {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.black-title {
+    color: #1F183A;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.black-title-box {
+    color: #1F183A;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.black-subtitle {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.black-text {
+    color: #545454;
+    font-size: 13px;
+    font-weight:100;
+}
+
+.black-text-box {
+    color: #545454;
+    font-size: 18px;
+    font-weight:100;
+    padding: 5px;
+}
+
+.white-text {
+    color: white;
+    font-weight: 500;
+}
+
+.flash-icon {
+    color: #FEC107;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.list-item-flash{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+
+/* text live background color */
+strong {
+    background-color: var(--e-global-color-aa6f337);
+}
+
+
+.box-shadow-none {
+    box-shadow: none;
+}
+
+/* a links border with transitions */
+.nav-colored-button {
+    border: 2px solid var(--e-global-color-secondary);
+    border-width: 2px, 2px, 2px, 2px;
+    color: var(--e-global-color-secondary);
+    transition: 500ms;
+}
+
+.nav-colored-button:hover {
+    background-color: var(--e-global-color-secondary);
+    color: black;
+}
+
+.sidenav-li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-sidenav {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--e-global-color-secondary);
+}
+
+.nav-colored-button-sidenav {
+    border: 2px solid var(--e-global-color-secondary);
+    border-width: 2px, 2px, 2px, 2px;
+    color: black;
+    background-color: var(--e-global-color-secondary);
+    margin: 5px 10px 15px 10px;
+    width: 100%;
+    transition: 500ms;
+}
+
+.colored-link {
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #FFFFFF;
+    border-radius: 0px 0px 0px 0px;
+    transition: 250ms;
+}
+
+.colored-link:hover {
+    border-color: #8d24e5;
+    background-color: #8d24e5;
+}
+
+/* navbar margin aanpasing */
+.row {
+    margin-bottom: 0px;
+}
+
+/* media query aanpassingen */
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* nav links borders */
+.center-link {
+    margin-top: 15px;
+}
+
+.height-nav {
+    height: 35px;
+    line-height: 30px;
+}
+
+.search-input {
+    width: 70%;
+    background-color: white;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.width-45{
+    width: 45%;
+}
+
+.border-none {
+    border: none;
+}
+
+.text_clr {
+    color: var(--e-global-color-secondary);
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 0.5px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.btn-padding {
+    padding: 8px 25px 8px 25px;
+}
+
+.background-grey {
+    background-color: #F2F2FE;
+}
+
+.btn-hover:hover {
+    background-color: var(--e-global-color-aa6f337);
+    color: #FFFFFF;
+}
+
+.transition-250ms {
+    transition: 250ms;
+}
+
+.box-icons {
+    font-size: 2.5rem;
+    color: #8D24E5;
+    margin-top: 30px;
+}
+
+.box-diensten {
+    height: 360px;
+    transition: 250ms;
+}
+
+.links-box {
+    color: #652DE1;
+    text-align: center;
+}
+
+.icon-box {
+    font-size: 1.3rem;
+}
+
+.box:hover {
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+}
+
+
+.border-bottom-black {
+    border-bottom: 0.5px solid gray;
+}
+
+.padding-bottom-50px {
+    padding-bottom: 50px;
+}
+
+.navbar-fixed {
+    opacity: 0.9;
+}
+
+.test-fixed {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.max-witdh {
+    max-width: 500px;
+}
+
+.background-nieuwsbrief {
+    background-image: url(https://lemonlive.be/wp-content/uploads/2021/02/ll-banner-bg-1920x600-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projecten-box {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+    justify-content: end;
+    align-items: stretch;
+    padding: 35px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hidden-block {
+    visibility: hidden;
+    height: 100%;
+    margin-top: 40px;
+    
+}
+
+
+.projecten-box:hover .hidden-block {
+    visibility: visible;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.projecten-background-1 {
+    background-image: url(https://lemonlive.be/wp-content/uploads/2021/02/ll-corporify-500x650-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projecten-background-2 {
+    background-image: url(https://lemonlive.be/wp-content/uploads/2021/02/ll-drukkemamas-500x650-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projecten-background-3 {
+    background-image: url(https://lemonlive.be/wp-content/uploads/2021/02/ll-noah-500x650-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-title {
+    text-align: end;
+    text-align: left;
+    justify-content: flex-end;
+}
+
+.project-title:hover {
+    text-align: end;
+    text-align: left;
+    justify-content: flex-end;
+}
+
+
+.project-white-title {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.projecten-box:hover .project-title {
+    visibility: hidden;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.project-text-white-3 {
+    color: white;
+    font-size: 17px;
+}
+
+.project-btn {
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 10px 20px 10px 20px;
+}
+
+.black-text {
+
+}
