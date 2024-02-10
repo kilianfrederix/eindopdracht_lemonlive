@@ -40,12 +40,20 @@ background-color: #5B5DF0;
     justify-content: right;
 }
 
+.align-item-center {
+    align-items: center;
+}
+
 .justify-center {
     justify-content: center;
 }
 
 .align-center {
     align-items: center;
+}
+
+.no-margin {
+    margin: 0;
 }
 
 /* margin css */
@@ -101,6 +109,14 @@ background-color: #5B5DF0;
     margin-bottom: 100px;
 }
 
+.margin-bottom-150px {
+    margin-bottom: 150px;
+}
+
+.margin-bottom-200px {
+    margin-bottom: 200px;
+}
+
 .margin-right-10px {
     margin-right: 10px;
 }
@@ -133,6 +149,10 @@ background-color: #5B5DF0;
     margin-top: 15px;
 }
 
+.margin-top-12px {
+    margin-top: 12px;
+}
+
 .margin-top-10px {
     margin-top: 10px;
 }
@@ -148,6 +168,22 @@ background-color: #5B5DF0;
 .margin-bottom-150px {
     margin-top: 30px;
     margin-bottom: 150px;
+}
+
+.padding-left-5px {
+    padding-left: 5px;
+}
+
+.padding-left-10px {
+    padding-left: 10px;
+}
+
+.padding-10px {
+    padding: 10px;
+}
+
+.padding-50px {
+    padding: 50px;
 }
 
 .padding-top-bottom-25px {
@@ -206,7 +242,7 @@ background-color: #5B5DF0;
 
 .white-title-form {
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -382,12 +418,17 @@ textarea.materialize-textarea {
     height: 3rem;
     width: 100%;
     font-size: 16px;
-    margin: 0 0 0.5px 0;
-    padding: 0;
+    margin: 12px 0 0.5px 0;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+}
+
+select {
+    margin-top: 12px;
+    padding: 5px;
+    border: 1px solid #f2f2f2;
 }
 
 .btn-padding {
@@ -419,8 +460,12 @@ textarea.materialize-textarea {
 }
 
 .links-box {
-    color: #652DE1;
+    color: #5B5DF0;
     text-align: center;
+}
+
+.font-size-17px {
+    font-size: 17px;
 }
 
 .icon-box {
@@ -457,6 +502,12 @@ textarea.materialize-textarea {
 
 .background-nieuwsbrief {
     background-image: url(https://lemonlive.be/wp-content/uploads/2021/02/ll-banner-bg-1920x600-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-contact {
+    background-image: url(https://lemonlive.be/wp-content/uploads/2021/02/ll-contact-bg-1920x600-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -546,6 +597,69 @@ textarea.materialize-textarea {
     padding: 10px 20px 10px 20px;
 }
 
-.black-text {
+.klanten-img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
 
+.background-color-form {
+    background-color: #1F183A;
+}
+
+.button-from-box {
+    width: 100%;
+}
+
+.form-submit-btn {
+    background-color: #5B5DF0;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px 35px 15px 35px;
+    width: 100%;
+    transition: 250ms;
+}
+
+.form-submit-btn:hover {
+    background-color: #8d24e5;
+}
+
+.input-background-clr {
+    background-color: #41395D;
+    border-color: #706A84;
+    border-width: 0px 0px 3px 0px;
+    border-radius: 0px 0px 0px 0px;
+    margin-top: 12px;
+}
+
+.textarea-background-clr {
+    background-color: #41395D;
+    border-color: #706A84;
+    border-width: 0px 0px 3px 0px;
+    border-radius: 0px 0px 0px 0px;
+    height: 100px;
+    margin-top: 12px;
+    width: 100%;
+    padding: 0;
+}
+
+.label-margin-bottom-12px {
+    margin-bottom: 12px;
+}
+
+
+.ckeckbox-text {
+    font-size: 14px;
+    color: #C0C0C0;
+}
+
+.large-contact-form {
+    box-shadow: 2px 2px 56px 1px rgba(0, 0, 0, 0.51);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: -50px 0px -70px 0px;
+    --e-column-margin-right: 0px;
+    --e-column-margin-left: 0px;
+    padding: 50px 50px 50px 50px;
 }

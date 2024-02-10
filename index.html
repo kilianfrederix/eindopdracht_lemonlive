@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/materialize.css">
     <link rel="stylesheet" href="style/style.css">
@@ -453,7 +454,7 @@
                             <option>.academy</option>
                         </select>
                         <input type="submit"
-                            class="margin-left-10px background-clr-white border-none text_clr text-bold transition-250ms btn-hover"
+                            class="margin-top-12px margin-left-10px background-clr-white border-none text_clr text-bold transition-250ms btn-hover"
                             value="Check Domain">
                     </form>
                 </div>
@@ -725,8 +726,128 @@
         </div>
     </section>
     <section class="margin-top-100px">
-
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h2 class="black-title margin-top-0px margin-bottom-50px">Sommige van onze trouwe klanten</h2>
+                </div>
+            </div>
+        </div>
     </section>
+    <section class="margin-bottom-200px">
+        <div class="container">
+            <div class="row valign-wrapper">
+                <div class="col s2 padding-10px">
+                    <img class="klanten-img" src="img/avdb-logo-horz-2-300x61.png" alt="avdb">
+                </div>
+                <div class="col s2">
+                    <img class="klanten-img" src="img/multipharma-300x75.png" alt="multifarma">
+                </div>
+                <div class="col s2">
+                    <img class="klanten-img" src="img/robin-logo-768x407-1-300x159.png" alt="robin">
+                </div>
+                <div class="col s2">
+                    <img class="klanten-img" src="img/easix.png" alt="easix">
+                </div>
+                <div class="col s2">
+                    <img class="klanten-img" src="img/corporify-768x245.png" alt="corporify">
+                </div>
+                <div class="col s2">
+                    <img class="klanten-img" src="img/noah-300x170.png" alt="noah">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="margin-bottom-100px background-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l6">
+                    <div class="margin-top-100px">
+                        <h2 class="white-title margin-bottom-40px">Leer ons kennen</h2>
+                    </div>
+                    <div>
+                        <ul class="margin-bottom-40px">
+                            <li class="flex margin-top-10px">
+                                <span class="material-icons links-box flex align-item-center">check_circle</span>
+                                <p class="white-text no-margin padding-left-10px font-size-17px">We kunnen uw huidige oplossing analyseren</p>
+                            </li>
+                            <li class="flex margin-top-10px">
+                                <span class="material-icons links-box flex align-item-center">check_circle</span>
+                                <p class="white-text no-margin padding-left-10px font-size-17px">We kunnen do's en don'ts bespreken op basis van onze ervaring</p>
+                            </li>
+                            <li class="flex margin-top-10px">
+                                <span class="material-icons links-box flex align-item-center">check_circle</span>
+                                <p class="white-text no-margin padding-left-10px font-size-17px">Wij kunnen u helpen met uw infrastructuurarchitectuur</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col s12 m12 l6 hide-on-med-and-down">
+                    <div class="background-color-form padding-50px large-contact-form">
+                        <h2 class="white-title-form">Contacteer ons</h2>
+                        <form action="#" method="POST" name="contact">
+                            <div class="margin-bottom-20px">
+                                <label for="name">Naam</label>
+                                <input class="input-background-clr" type="text" name="name" id="name" required>
+                            </div>
+                            <div class="margin-bottom-20px">
+                                <label for="email">E-mail</label>
+                                <input class="input-background-clr" type="email" name="email" id="email" required>
+                            </div>
+                            <div class="margin-bottom-20px">
+                                <label for="number">Telefoonnumber</label>
+                                <input class="input-background-clr" type="number" name="number" id="number" required>
+                            </div>
+                            <div class="margin-bottom-20px">
+                                <label for="Bericht">Bericht</label>
+                                <textarea class="textarea-background-clr" name="Bericht" id="Bericht" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="margin-bottom-20px">
+                                <input type="checkbox" name="checkbox" id="checkbox" required>
+                                <label class="ckeckbox-text" for="checkbox">Ik ga akkoord met de privacy-overeenkomst.</label>
+                            </div>
+                            <div class="g-recaptcha hide-on-small-only margin-bottom-20px" data-sitekey="6LcWSm4pAAAAAK--Gr2Mj0S9g0IIcf9GIR8XCSCW"></div>
+                            <div class="button-from-box">
+                                <button class="form-submit-btn" type="submit">Verzend</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col s12 m12 l6 hide-on-large-only">
+                    <div class="background-color-form padding-50px">
+                        <h2 class="white-title-form">Contacteer ons</h2>
+                        <form action="#" method="POST" name="contact">
+                            <div class="margin-bottom-20px">
+                                <label for="name">Naam</label>
+                                <input class="input-background-clr" type="text" name="name" id="name" required>
+                            </div>
+                            <div class="margin-bottom-20px">
+                                <label for="email">E-mail</label>
+                                <input class="input-background-clr" type="email" name="email" id="email" required>
+                            </div>
+                            <div class="margin-bottom-20px">
+                                <label for="number">Telefoonnumber</label>
+                                <input class="input-background-clr" type="number" name="number" id="number" required>
+                            </div>
+                            <div class="margin-bottom-20px">
+                                <label for="Bericht">Bericht</label>
+                                <textarea class="textarea-background-clr" name="Bericht" id="Bericht" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="margin-bottom-20px">
+                                <input type="checkbox" name="checkbox" id="checkbox" required>
+                                <label class="ckeckbox-text" for="checkbox">Ik ga akkoord met de privacy-overeenkomst.</label>
+                            </div>
+                            <div class="g-recaptcha hide-on-small-only margin-bottom-20px" data-sitekey="6LcWSm4pAAAAAK--Gr2Mj0S9g0IIcf9GIR8XCSCW"></div>
+                            <div class="button-from-box">
+                                <button class="form-submit-btn" type="submit">Verzend</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
