@@ -15,6 +15,11 @@ body {
     background-image: linear-gradient(230deg, var(--e-global-color-secondary) 0%, var(--e-global-color-aa6f337) 61%);
 }
 
+.background-gradient-footer {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #8C25E4 0%, #5C5DBD 100%);
+}
+
 .background-clr-white {
     background-color: white;
 }
@@ -52,11 +57,15 @@ background-color: #5B5DF0;
     align-items: center;
 }
 
+/* margin css */
 .no-margin {
     margin: 0;
 }
 
-/* margin css */
+.margin-10px {
+    margin: 25px 0 0px 0;
+}
+    
 .margin-left-5px {
     margin-left: 5px;
 }
@@ -178,6 +187,10 @@ background-color: #5B5DF0;
     padding-left: 10px;
 }
 
+.padding-5px {
+    padding: 5px;
+}
+
 .padding-10px {
     padding: 10px;
 }
@@ -188,6 +201,14 @@ background-color: #5B5DF0;
 
 .padding-top-bottom-25px {
     padding: 25px 0;
+}
+
+.padding-top-100px {
+    padding-top: 100px;
+}
+
+.padding-top-50px {
+    padding-top: 50px;
 }
 
 .padding-bottom-40px {
@@ -204,6 +225,19 @@ background-color: #5B5DF0;
     height: auto;
     width: 100px
 }
+
+.img-medium {
+    display: block;
+    height: auto;
+    width: 150px
+}
+
+.img-medium {
+    display: block;
+    height: auto;
+    width: 250px
+}
+
 
 /* text css */
 .color-black {
@@ -526,16 +560,24 @@ select {
 
 .hidden-block {
     visibility: hidden;
+    position: relative;
     height: 100%;
-    margin-top: 40px;
-    
+    margin-top: 250px;
+    transition: 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
 
+.projecten-box:hover .project-title {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
 
 .projecten-box:hover .hidden-block {
     visibility: visible;
     height: 100%;
     margin-top: 40px;
+    transform: translateX(0%) translateY(-5%);
+    transition: all .6s ease-in-out;
 }
 
 .projecten-background-1 {
@@ -578,12 +620,6 @@ select {
     font-size: 30px;
 }
 
-.projecten-box:hover .project-title {
-    visibility: hidden;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-}
 
 .project-text-white-3 {
     color: white;
@@ -662,4 +698,48 @@ select {
     --e-column-margin-right: 0px;
     --e-column-margin-left: 0px;
     padding: 50px 50px 50px 50px;
+}
+
+.icons-title {
+    font-family: "Alata", Sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    color: #5B5DF0;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.icon-box {
+    background-color: #F2F1FF;
+    fill: #AD7AE5;
+    color: #AD7AE5;
+    border-color: #AD7AE5;
+    padding: 1.2rem;
+    border: 3px solid;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s;
+    text-align: center;
+    border-width: 2px 2px 2px 2px;
+}
+
+.icon-box:hover {
+    background-color: #AD7AE5;
+    color: #F2F1FF;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+.white-logo-footer {
+    vertical-align: middle;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
