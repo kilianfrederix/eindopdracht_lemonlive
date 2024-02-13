@@ -199,6 +199,14 @@ background-color: #5B5DF0;
     padding: 10px;
 }
 
+.padding-top-10px {
+    padding-top: 10px;
+}
+
+.padding-bottom-10px {
+    padding-bottom: 10px;
+}
+
 .padding-50px {
     padding: 50px;
 }
@@ -249,6 +257,7 @@ background-color: #5B5DF0;
 
 /* text css */
 .color-black {
+    font-size: 18px;
     color: black;
     transition: 250ms;
 }
@@ -272,25 +281,25 @@ background-color: #5B5DF0;
 .yellow-title {
     color: #FEC107;
     font-family: "Noto Sans", Sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
 }
 
 .white-title {
     color: #ffffff;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 40px;
 }
 
 .white-title-form {
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
 }
 
 .black-title {
     color: #1F183A;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -302,13 +311,12 @@ background-color: #5B5DF0;
 
 .black-subtitle {
     color: black;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
 }
 
 .black-text {
     color: #545454;
-    font-size: 13px;
+    font-size: 18px;
     font-weight:100;
 }
 
@@ -321,6 +329,7 @@ background-color: #5B5DF0;
 
 .white-text {
     color: white;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -334,7 +343,7 @@ background-color: #5B5DF0;
     display: flex;
     align-items: center;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 /* text live background color */
@@ -349,8 +358,8 @@ strong {
 
 /* a links border with transitions */
 .nav-colored-button {
+    font-size: 18px;
     border: 2px solid var(--e-global-color-secondary);
-    border-width: 2px, 2px, 2px, 2px;
     color: var(--e-global-color-secondary);
     transition: 500ms;
 }
@@ -376,20 +385,24 @@ strong {
     border: 2px solid var(--e-global-color-secondary);
     border-width: 2px, 2px, 2px, 2px;
     color: black;
+    font-size: 20px;
     background-color: var(--e-global-color-secondary);
-    margin: 5px 10px 15px 10px;
+    margin: 10px 15px 15px 15px;
     width: 100%;
     transition: 500ms;
 }
 
 .colored-link {
+    font-size: 15px;
+    font-weight: bold;
     color: white;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 10px 5px 10px;
     border-style: solid;
-    border-width: 2px 2px 2px 2px;
+    border-width: 3px 3px 3px 3px;
     border-color: #FFFFFF;
     border-radius: 0px 0px 0px 0px;
     transition: 250ms;
+
 }
 
 .colored-link:hover {
@@ -415,8 +428,8 @@ strong {
 }
 
 .height-nav {
-    height: 35px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 35px;
 }
 
 .search-input {
@@ -474,7 +487,7 @@ select {
 }
 
 .btn-padding {
-    padding: 8px 25px 8px 25px;
+    padding: 10px 28px 10px 28px;
 }
 
 .background-grey {
@@ -498,7 +511,11 @@ select {
 
 .box-diensten {
     height: 360px;
-    transition: 250ms;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.box-diensten:hover {
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
 }
 
 .links-box {
@@ -506,8 +523,8 @@ select {
     text-align: center;
 }
 
-.font-size-17px {
-    font-size: 17px;
+.font-size-20px {
+    font-size: 20px;
 }
 
 .icon-box {
