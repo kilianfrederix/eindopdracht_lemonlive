@@ -2597,6 +2597,7 @@ textarea {
 }
 
 ul:not(.browser-default) {
+  top: -35px;
   padding-left: 0;
   list-style-type: none;
 }
@@ -2701,7 +2702,6 @@ i.left {
 
 i.right {
   float: right;
-  margin-left: 15px;
 }
 
 i.tiny {
@@ -4274,7 +4274,6 @@ nav {
   background-color: #ee6e73;
   width: 100%;
   height: 56px;
-  line-height: 56px;
 }
 
 nav.nav-extended {
@@ -4320,7 +4319,7 @@ nav .sidenav-trigger {
   position: relative;
   z-index: 1;
   height: 56px;
-  margin: 0 18px;
+  margin: 18px 18px;
 }
 
 nav .sidenav-trigger i {
@@ -4477,7 +4476,7 @@ nav .input-field label.active i {
   }
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     height: 64px;
-    line-height: 64px;
+    line-height: 32px;
   }
   .navbar-fixed {
     height: 64px;
@@ -5545,7 +5544,7 @@ button.btn-floating {
 }
 
 .dropdown-content {
-  background-color: #fff;
+  background-color: #FFFFFFE6;
   margin: 0;
   display: none;
   min-width: 100px;
@@ -7697,7 +7696,6 @@ input[type=range]::-ms-thumb {
   right: 0;
   opacity: 0;
   height: 120vh;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 997;
   display: none;
 }
