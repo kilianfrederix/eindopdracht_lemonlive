@@ -402,7 +402,7 @@ strong {
 }
 
 .colored-link {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     color: white;
     padding: 5px 10px 5px 10px;
@@ -431,19 +431,25 @@ strong {
         width: 100%;
     }
     .navbar {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
 @media only screen and (min-width: 1040px) {
     .navbar {
-        font-size: 16px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .hamburger-menu {
+        padding-top: 18px;
     }
 }
 
 @media only screen and (min-width: 1095px) {
     .navbar {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -553,6 +559,8 @@ select {
 .links-box {
     color: #5B5DF0;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .links-box-1 {

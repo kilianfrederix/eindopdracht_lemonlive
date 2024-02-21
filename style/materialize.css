@@ -2254,7 +2254,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-     -moz-text-decoration: underline dotted;
+    -moz-text-decoration: underline dotted;
           text-decoration: underline dotted;
   /* 2 */
 }
@@ -4319,7 +4319,6 @@ nav .sidenav-trigger {
   position: relative;
   z-index: 1;
   height: 56px;
-  margin: 18px 18px;
 }
 
 nav .sidenav-trigger i {
