@@ -709,13 +709,8 @@ select {
     font-size: 20px;
     border: 1px solid white;
     padding: 10px 20px 10px 20px;
-    transition: 400ms;
 }
 
-.project-btn:hover {
-    border-color: #8d24e5;
-    background-color: #8d24e5;
-}
 
 .klanten-img {
     height: auto;
