@@ -61,7 +61,7 @@
             </div>
         </div>
     </section>
-    <header class="test-fixed background-clr-white">
+    <header class="fixed background-clr-white">
         <div class="container">
             <div class="row">
                 <nav class="flex background-clr-white box-shadow-none">
@@ -187,9 +187,10 @@
                     </div>
                     <div>
                         <h3 class="white-title">
-                            Wanneer jij<strong> Live </strong>gaat, zorgen wij ervoor dat het licht aanblijft
+                            Wanneer jij<strong class="animated"> Live </strong>gaat, zorgen wij ervoor dat het licht aanblijft
                         </h3>
                     </div>
+                    
                     <div>
                         <ul>
                             <li class="list-item-flash"><i class="material-icons flash-icon">flash_on</i>Geschikt voor
@@ -1010,6 +1011,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        const strongElement = document.querySelector('strong.animated');
+        strongElement.addEventListener('animationiteration', () => {
+            setTimeout(() => {
+                strongElement.style.animation = 'backgroundAnimation 5s ease infinite';
+            }, 10000);
+        });
+        </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script>

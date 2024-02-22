@@ -355,12 +355,6 @@ background-color: #5B5DF0;
     font-size: 18px;
 }
 
-/* text live background color */
-strong {
-    background-color: var(--e-global-color-aa6f337);
-}
-
-
 .box-shadow-none {
     box-shadow: none;
 }
@@ -606,7 +600,8 @@ select {
     opacity: 0.9;
 }
 
-.test-fixed {
+.fixed {
+    opacity: 0.8;
     position: sticky;
     top: 0;
     left: 0;
@@ -896,3 +891,31 @@ select {
     color: white;
     font-size: 15px;
 }
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 200% 50%; 
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+strong {
+    background-image: linear-gradient(90deg, transparent, transparent);
+    background-size: 200% 100%;
+    background-repeat: no-repeat; 
+    animation: backgroundAnimation 2s ease infinite; 
+    animation-delay: 5s; 
+}
+
+strong.animated {
+    background-image: linear-gradient(90deg, var(--e-global-color-aa6f337), var(--e-global-color-aa6f337)); 
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+
